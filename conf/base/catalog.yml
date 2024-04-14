@@ -1,0 +1,9 @@
+"music_recommendation_raw_data_{filename}":
+  type: pandas.CSVDataset
+  filepath: data/01_raw/{filename}.csv
+  load_args:
+    sep: ','
+
+"music_recommendation_pipe_{filename}":
+  type: pickle.PickleDataset
+  filepath: data/06_models/{filename}.joblib
